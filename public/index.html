@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>QuickText</title>
+</head>
+<body>
+    <div class="container2">
+        <div class="welcome center">
+            <h1 class="title">Welcome</h1>
+            <br>
+            <form action="chat.html">
+                <input type="text" class="input is-success" placeholder="Enter UserName" name="userName" required>
+                    <div class="select">
+                        <select name="room" required>
+                            <option value="" disabled selected>Select a Room</option>
+                            <option value="Default">Default</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Random">Random</option>
+                            <option value="Jokes">Jokes</option> 
+                          </select>
+                      </div>
+                <button type="submit" class="button" id="enter-btn">Enter</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>QuickText</title>
+</head>
+<body>
+    <div class="title-wrapper">
+        <div class="title">QuickText</div>
+    </div>
+    <div class="container main">
+        <div class="row">
+            <div class="chatbox">
+                <div class="mobile">
+                   <div class="mobile-users">
+                       Show Online Users
+                   </div>
+                </div>
+                <div class="users-menu"></div>
+                <!-- Users msg goes here -->
+                    <!-- <div class="chatMsg">
+                        <h1 id="userName"><strong>USER</strong></h1>
+                        <br>
+                        <p>Here is some msg Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi, facilis laudantium eaque repudiandae optio asperiores quos cumque minus, officia at necessitatibus soluta ut odit incidunt sint blanditiis obcaecati inventore.</p>
+                    </div> -->
+            </div>
+            <div class="users">
+                <ul class="activeUsers">
+                </ul>
+            </div>
+        </div>
+        <div class="send">
+            <form class="field has-addons" autocomplete="off">
+                <input type="text" class="input" placeholder="Enter message..." id="msg">
+                <button class="button" type="submit" id="send-btn">
+                    <svg class="send-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 0l20 10L0 20V0zm0 8v4l10-2L0 8z"/></svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <audio id="myAudio">
+        <source src="tone.mp3" type="audio/mpeg">
+    </audio>
+    <script src="chat.js"></script>
+</body>
+</html>

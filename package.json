@@ -1,0 +1,17 @@
+{
+  "name": "QuickText",
+  "version": "1.0.0",
+  "description": "Chat app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.13.13",
+    "socket.io": "^2.4.1",
+    "xss": "^1.0.8"
+  }
+}
